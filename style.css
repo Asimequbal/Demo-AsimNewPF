@@ -16,8 +16,15 @@ html,body{width: 100%; height: 100%;}
 #iconset a{width: 30px; height: 30px; border-radius: 50%;  background-color: rgba(255, 255, 255, 0.6); color: black; display: inline-block;display: flex; align-items: center; justify-content:center; }
 #iconset{display: flex; align-items: center; gap: 10px;}
 #second{ height: 100vh; background-color: black; padding-top: 100px;}
-.elem,.elemlast{ border-top: 1px solid #1f1f1f; margin-right: 15vw; margin-left: 4vw; display: flex; align-items: center; justify-content: space-between; color: #fff; position: relative;}
+.elem,.elemlast{ border-top: 1px solid #fff; margin-right: 15vw; margin-left: 4vw; display: flex; align-items: center; justify-content: space-between; color: #fff; position: relative;}
 .elem h2,.elemlast h2{color: #fff; opacity: 0.6; font-size: 8vw; font-weight: 500 !important; text-transform: uppercase;}
-.elemlast{border-bottom: 1px solid #1f1f1f;;}
+.elemlast{border-bottom: 1px solid #fff;}
+.elemlast img{display: none;}
 .elem img{position: absolute; z-index: 9999; height: 140%; display: none;}
-.elemlast img{position: absolute; z-index: 9999; height: 140%; display: none;}
+.about1{width: 100%; background-color: black; display: grid; justify-content: center; gap: 80px; grid-template-columns: 50% 44%;}
+#aboutimage{width: 15vw;height: 15vw; border-radius: 50%; background-image: url(images/cynthia.png);background-size: cover;  background-position: center; background-color: black; margin-left: auto;}
+.about_text{color: #fff; }
+.about_text h2{font-size: 14px; opacity: 0.6;}
+.about_text p{line-height: 28px; font-size: 1.125rem; width: 75%; letter-spacing: 0.01em;}
+#btn_talk{padding: 6px 20px; border-radius: 16px; outline: 1px solid #fff; background-color: black; color: #fff;}
+#btn_talk:hover{background-color: #fff; color: black; outline: none;}
