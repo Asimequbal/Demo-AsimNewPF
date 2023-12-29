@@ -26,5 +26,11 @@ html,body{width: 100%; height: 100%;}
 .about_text{color: #fff; }
 .about_text h2{font-size: 14px; opacity: 0.6;}
 .about_text p{line-height: 28px; font-size: 1.125rem; width: 75%; letter-spacing: 0.01em;}
-#btn_talk{padding: 6px 20px; border-radius: 16px; outline: 1px solid #fff; background-color: black; color: #fff;}
-#btn_talk:hover{background-color: #fff; color: black; outline: none;}
+#btn_talk{padding: 6px 20px; border-radius: 16px; outline: 1px solid #fff; background-color: black; color: #fff; margin-top: 15px; transition:all 0.9s; cursor: pointer;}
+#btn_talk:hover{background-color: #fff; color: black; outline: none; transition:all 0.9s;}
+#to_mention p{font-size: 16px; color: #fff; opacity: 0.6;}
+#to_mention h2{font-size: 16px; color: #fff; font-weight: 500;}
+#to_mention{padding-left: 40px;}
+#footer{padding: 100px 40px 20px 40px; background-color: black; color: #fff; display: flex; justify-content: space-between; align-items: center;}
+#social_media{display: flex; gap: 20px; align-items: center; color: #fff; font-size: 14px; font-weight: 500;}
+#ist_time{display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500;}
