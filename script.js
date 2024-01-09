@@ -26,10 +26,32 @@ function animatefpage(){
     ease: Expo.easeInOut,
   })
 }
+
+
 function moovescrolldot(){
     window.addEventListener('mousemove',function(delt){
-      document.querySelector('#minicircle').style.transform = `translate(${delt.clientX}px, ${delt.clientY}px)`
+      document.querySelector('#minicircle').style.transform = `translate(${delt.clientX}px, ${delt.clientY}px)`;
     })
 }
 moovescrolldot();
 animatefpage();
+document.querySelectorAll(".elem").forEach(function(elem){
+  var rotate = 0;
+  var diffrot = 0;
+  elem.addEventListener("mouseleave", function (details) {
+    gsap.to(elem.querySelector("img"), {
+      opacity: 0,
+      ease: Power3,
+      duration: 0.5,
+    });
+  });
+  elem.addEventListener("mousemove",function(details){
+  var tdifference = details.clientY - elem.getBoundingClientRect().top;
+gsap.to(elem.querySelector("img"),{
+opacity: 1,
+ease : Power3,
+top: tdifference,
+left : details.clientX,
+});
+  });
+});
